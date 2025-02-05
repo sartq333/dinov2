@@ -8,7 +8,7 @@ model = vit_base()
 
 state_dict = torch.hub.load_state_dict_from_url("https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_pretrain.pth",
                                                 map_location="cpu",
-                                                headers={"User-Agent": "Mozilla/5.0"})
+                                                )
 
 model.load_state_dict(state_dict)
 
